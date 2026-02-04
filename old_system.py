@@ -40,6 +40,12 @@ def run_system_monolith():
            
             n.append(new_name)
             print("Crew member added.")
+
+            n.append(new_rank)
+            print("Rank added.")
+
+            n.append(new_div)
+            print("Division added.")
             
         elif opt == "3":
             rem = input("Name to remove: ")
