@@ -98,4 +98,4 @@ def run_system_monolith():
             
         print("End of cycle.")
 
-run_system_monolith
+run_system_monolith()
