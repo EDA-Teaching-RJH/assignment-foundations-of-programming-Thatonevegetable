@@ -90,10 +90,10 @@ def run_system_monolith():
 
         
         fuel = 100
-        consumption -=1
         while fuel > 0:
             
             print("Idling...")
+            fuel -=1
             break 
             
         print("End of cycle.")
