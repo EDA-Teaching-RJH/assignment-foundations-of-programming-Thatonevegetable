@@ -55,13 +55,16 @@ def run_system_monolith():
                 r.pop(idx)
                 d.pop(idx)
                 print("Removed.")
+
+            else:
+                print("Name not found.")
             
         elif opt == "4":
             print("Analyzing...")
             count = 0
             
             for rank in r:
-                if rank == "Captain" or "Commander": 
+                if rank in "Captain" or "Commander": 
                     count = count + 1
             print("High ranking officers: " + count) 
             
