@@ -41,20 +41,20 @@ def run_system_monolith():
             n.append(new_name)
             print("Crew member added.")
 
-            n.append(new_rank)
+            r.append(new_rank)
             print("Rank added.")
 
-            n.append(new_div)
+            d.append(new_div)
             print("Division added.")
             
         elif opt == "3":
             rem = input("Name to remove: ")
-           
-            idx = n.index(rem)
-            n.pop(idx)
-            r.pop(idx)
-            d.pop(idx)
-            print("Removed.")
+            if rem in n:
+                idx = n.index(rem)
+                n.pop(idx)
+                r.pop(idx)
+                d.pop(idx)
+                print("Removed.")
             
         elif opt == "4":
             print("Analyzing...")
